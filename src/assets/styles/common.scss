@@ -1,0 +1,20 @@
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: nowrap;
+}
+
+@mixin after($width, $height: 1px, $bgColor: #ddd) {
+  position: absolute;
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+  background-color: $bgColor;
+}
